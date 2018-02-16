@@ -1,55 +1,77 @@
+
+
+#leftfooter li {
+  margin: 10px;
+  margin-top: 12px;
+  margin-right: 13px;
+}
+
+
+#rightfooter li {
+  margin: 10px;
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+
+
 body {
   font-family: arial, sans-serif;
   color: black;
   background-color: white;
   font-size: 13px;
   font-weight: normal;
-
   margin: auto;
+  height: 100vh;
 }
 
+
 li {
-  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  padding: 0px;
 }
 
 
 #navbartop {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 200px;
+  top: 3px;
+  width: 100%;
+}
+
+.navleft {
+  float: right;
+  top: 7px;
+
+  position: relative;
+  right: 26px;
+}
+
+.navleft li {
+
+  position: relative;
+  
+  margin: 6px;
 }
 
 #Google {
-  position: absolute;
-  top: 198px;
-  right: 0px;
-  left: 504px;
-  bottom: 0px;
+  text-align: center;
+  padding-top: 182px;
 }
 
 #input { 
   
-  display: inline;
-  position: absolute;
   top: 345px;
   left: 348px;
   border-radius: 2px;
 border: solid 0.1px #F2F2F2;
 }
 
-#buttons {
-  display: inline;
- position: absolute;
-   bottom: 0px;
-  right: 0px;
-  left: 450px;
-  top: 413px;
-}
+  
 
 .button {
   border-radius: 2px;
-  padding: 10px 30px;
+  padding: 10px 17px;
   background-color: #F2F2F2;
   border: none;
   color: #757575;
@@ -57,19 +79,27 @@ border: solid 0.1px #F2F2F2;
   font-weight: bold;
   font-size: 13px;
   margin: 2px;
+  font-family: arial;
 }
 .button:hover {
+  padding: 9px 16px;
   color: black;
   border: 1px solid #C9C9C9;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1);
 }
 #inputbox {
-  width: 50%;
-  border-radius: 1px;
-  border: none;
-text-align: start;
-padding: 10px 160px 11px 160px;
+  text-align: left;
+  border-radius: 2px;
+  border: 0.1px solid #E6E6E6;
+padding: 5px 15px 5px;
 font-size: 17px;
-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  border-bottom-color: #CBCBCB;
+  height: 34px;
+  width: 530px;
+  padding-right: 39px;
+  position: relative;
+  right: -7px;
 }
 #inputbox:hover {
 
@@ -79,51 +109,76 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 #footer {
   background-color: #F2F2F2;
-  border: 0.1px #F2DCDC solid;
+  border-top: 0.1px #F2DCDC solid;
   position: absolute;
-  bottom: 0px;
-  width: 100%;
   height: 38px;
   color: #757575;
   font-size: 13px;
-  font-family: arial, sans-serif;
-}
-
-#leftfooter {
-  position: absolute;
-  bottom: -15px;
-  left: 22px;
-  display: inline-block;
-  width: 300px;
-}
-#rightfooter {
-  position: absolute;
-  bottom: -15px;
-  right: -3px;
-  display: inline-block;
-  width: 411px;
-  white-space: nowrap;
-}
-#totallyunnecesaryfooter {
- background-color: #F2F2F2;
-  border: 0.1px #F2DCDC solid;
-  position: absolute;
+  font-family: inherit;
   bottom: 0px;
   width: 100%;
-  height: 78px;
-  color: #757575;
-  font-size: small;
-  font-family: arial, sans-serif; 
 }
 
-#tuf {
-  margin: -13px 0px 0px 20px;
-}
-li {
-  padding: 0px 0px 0px 0px;
-}
-p {
-  text-align: center;
-  position: absolute;
+
+#leftfooter {
+  float: left;
   
+  
+
+  text-align: center;
+  overflow: auto;
+  height: inherit;
+  position: relative;
+  left: 20px;
 }
+#rightfooter {
+  float: right;
+  
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  height: inherit;
+  position: relative;
+  right: 20px;
+}
+
+
+#form {
+  padding-top: 40px;
+  text-align: center;
+}
+ #button-container {
+  padding-top: 30px;
+   position: relative;
+   right: 2px
+ }
+
+ a {
+  text-decoration: none;
+  color: #2C2C2C
+ }
+
+
+ .bluebutton {
+
+  color: white;
+  background-color: #4584EE;
+  
+  padding: 7.5px;
+  border-radius: 2px;
+  padding-left: 11px;
+  padding-right: 11px;
+  border: #4285F4 1px solid;
+ }
+
+ p a {
+  text-decoration: none;
+  color: #2F23B5;
+ }
+
+ p a:hover {
+
+  text-decoration: underline;
+  
+ }
+
